@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js"></script>
+    <style>
+         table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 3px solid rgb(56, 20, 20);
+            padding: 8px;
+            text-align: left;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #b8bdb8;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="display()">
+    <p style="text-align: center;"><strong>STUDENT DATA MANAGEMENT</strong></p>
+    <div style="text-align: center;">
+    <input id="rollno" placeholder="ROLL NO.">
+    <input id="name" placeholder="NAME">
+    <input id="branch" placeholder="BRANCH">
+    <input id="cgpa" placeholder="CGPA">
+    <button onclick="diplay()">FETCH</button>
+    <button onclick="insert()">INSERT</button>
+    </div>
+    <br><br><br>
+    <table align="center" ></table>
+</body>
+</html>
